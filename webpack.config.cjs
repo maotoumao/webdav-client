@@ -14,7 +14,7 @@ module.exports = smp.wrap({
         outputModule: true
     },
 
-    externals: [],
+    externals: ["he"],
 
     externalsType: "module",
 
@@ -65,7 +65,6 @@ module.exports = smp.wrap({
 
     resolve: {
         alias: {
-            "he": path.resolve(__dirname, "./util/he.stub.ts"),
             "http": path.resolve(__dirname, "./util/http.stub.ts"),
             "node-fetch": path.resolve(__dirname, "./util/node-fetch.stub.ts")
         },
